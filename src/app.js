@@ -10,7 +10,9 @@ app.use('/test', (req, res) => {
 });
 
 // This will only handle GET call to /user
-app.get('/user', (req, res) => {
+app.get('/user/:userId', (req, res) => {
+    console.log(req.query);
+    console.log(req.params);
     res.send({firstname: "Ko", lastname: "Wa"})
 })
 
