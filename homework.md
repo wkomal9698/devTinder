@@ -41,3 +41,8 @@ Call the connectDB function and connect to database before starting application 
 Create a user schema and user model
 Create POST /signup API to add data to database
 Push some documents using API calls from Postman/ Talend
+Error handling using try, catch
+
+JS Object vs JSON (difference)
+Add express.json() middleware to your app
+Make your signup API dynamic to receive data from the end user
