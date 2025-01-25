@@ -49,3 +49,10 @@ Make your signup API dynamic to receive data from the end user
 User.findOne() with duplicate email ids, which object will be returned
 API - Get user by emailId
 API - Feed API - GET /feed - get all the users from the database
+API - Get user by ID
+Create a delete user API
+Difference between PATCH and PUT
+API - Update a user
+Explore the Mongoose documentation for Model methods
+What are options in findOneAndUpdate method, explore more about it
+API - Update the user API with emailId
