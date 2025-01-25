@@ -70,13 +70,13 @@ app.delete('/user', async (req, res) => {
     }
 })
 
-// Delete a user from database - with id
+// Patch a user from database - with id
 app.patch('/user', async (req, res) => {
     const userId = req.body.userId;
     const data = req.body;
     try {
-        // const user = await User.findOneAndDelete({_id: data})
-        const user = await User.findByIdAndUpdate(userId, data)
+        // const user = await User.findOneAndUpdate({_id: data})
+        const user = await User.findByIdAndUpdate(userId, data, {runValidators: true})
         if(!user) {
             res.status(404).send("User not found!")
         } else {

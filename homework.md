@@ -56,3 +56,10 @@ API - Update a user
 Explore the Mongoose documentation for Model methods
 What are options in findOneAndUpdate method, explore more about it
 API - Update the user API with emailId
+
+Explore schematype options from documentation
+Add required, unique, lowercase, min, minLength, trim
+Add default
+Create a custom validate function for gender and other fields
+Improve the DB schema - Put all appropriate validtions on each field in schema
+Add timestamps to the User schema
