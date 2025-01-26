@@ -73,3 +73,5 @@ NEVER TRUST req.body
 Validate the data in Signup API
 Install bcrypt package
 Create a passwordHash using bcrypt.hash() and save the user with encrypted password
+Create login API
+Compare passwords and throw error if email or password is invalid
