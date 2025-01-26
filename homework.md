@@ -65,3 +65,5 @@ Improve the DB schema - Put all appropriate validtions on each field in schema
 Add timestamps to the User schema
 Add API level validations on Patch and signup post request
 Data Sanitization - Add API validations for each field
+Install validator
+Explore the validator library functions and use validator functions for password, email and photoUrl
