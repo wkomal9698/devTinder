@@ -15,12 +15,14 @@ const userAuth = async (req, res, next) => {
         console.log("decoded obj", decodedObj)
         // Find the user
         const {_id} = decodedObj;
-        const user = User.findById(_id)
+        const user = await User.findById(_id)
         console.log("user obj", user)
         if(!user) {
             throw new Error("User not found!");
         }
+
         req.user = user;
+        console.log("Req user: ", req.user);
         next();
     }
     catch(err) {
