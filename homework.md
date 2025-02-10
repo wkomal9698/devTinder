@@ -82,3 +82,6 @@ CReate a GET /profile API and check if get teh cookie back
 Install jsonwebtoken
 In login API, after email and password validation, create a JWT token and send ot back to user in cookies
 Read the cookies inside the profile API and find the logged in user
+Write userAuth middleware
+Add the userAuth middleware in profile API and a new sendConnectionRequest API
+Set the expiry of JWT token and cookies to 7 days
