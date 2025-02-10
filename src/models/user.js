@@ -67,4 +67,17 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
+userSchema.methods.getJWT = async function () {
+    const user = this;
+    const token = await jwt.sign({_id: user._id}, "DEV@Tinder$790",{expiresIn: "1d"});
+    return token;
+}
+
+userSchema.methods.validatePassword = async function (inputPasswordByUser) {
+    const user = this;
+    const passwordHash = user.password;
+    const isPasswordValid = bcrypt.compare(inputPasswordByUser, passwordHash);
+    return isPasswordValid;
+}
+
 module.exports = User;
