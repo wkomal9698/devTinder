@@ -22,4 +22,4 @@ userRouter
 - GET /user/feed - Gets you the profiles of other users on platforms
 
  
-Status: ignore, interested, accepted, rejected
+Status: ignored, interested, accepted, rejected

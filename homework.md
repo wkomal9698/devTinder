@@ -99,3 +99,15 @@ Create POST /logout API
 Create PATCH /profile/edit
 Create PATCH /profile/password API => forgot password API
 Make sure you validate all data in every POST, PATCH APIs
+
+CReate Connection Request Schema
+Send connection request API
+Proper validation of data
+Think about ALL corner cases
+$and, $or, $nor and $not query (Logical queries) and also comparison queries in mongoose
+schema.pre("save") function
+Read more about indexes in MongoDB
+Why do we need index in DB?
+What are the advantages and disadvantages of creating indexes?
+Read this article about compound indexes - https://www.mongodb.com/docs/manual/core/indexes/index-types/index-compound/
+ALWAYS THINK ABOUT CORNER CASES
