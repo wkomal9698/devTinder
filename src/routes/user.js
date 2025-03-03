@@ -62,7 +62,7 @@ userRouter.get('/user/feed', userAuth, async (req, res) => {
         })
 
         const users = await User.find({$and: [{_id: {$nin: Array.from(hideUsersFromFeed)}}, {_id: {$ne: loggedInUser._id}}]}).select(USER_SAFE_DATA).skip(skip).limit(limit)
-
+        console.log("USERSS IN FEED: "+users)
         res.send(users)
     } catch(err) {
         res.status(400).send("ERROR: " + err.message);
